@@ -10,7 +10,7 @@
        state: present
    - name: allow remote connections
      replace:
-       path: /etc/redis.conf
+       path: /etc/redis/redis.conf
        regexp: '127.0.0.1'
        replace: '0.0.0.0'
    - name: change protected mode to no

@@ -3,9 +3,9 @@
   become: yes
   tasks:
    - name: copy rabbitmq repofile
-       copy:
-         src: rabbitmq.repo
-         dest: /etc/yum.repos.d/rabbitmq.repo
+     copy:
+       src: rabbitmq.repo
+       dest: /etc/yum.repos.d/rabbitmq.repo
    - name: install rabbitmq server
      package:
        name: rabbitmq-server

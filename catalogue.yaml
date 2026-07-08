@@ -77,7 +77,7 @@
       systemd_service:
         name: catalogue
         daemon_reload: true
-      when: unit_file.change 
+      when: unit_file.changed
         
 
 

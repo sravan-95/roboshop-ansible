@@ -9,8 +9,8 @@
     - name: install nodejs 20
       package: 
          name: nodejs
-         state: present
          version: 20
+         state: present
     - name: create roboshop system user
       user:
         name: roboshop
@@ -38,6 +38,6 @@
       unarchive:
         src: /tmp/catalogue.zip
         dest: /app
-        
+
       
         

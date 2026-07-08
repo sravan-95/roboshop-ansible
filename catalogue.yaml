@@ -45,6 +45,7 @@
       template:
         src: catalogue.service.j2
         dest: /etc/systemd/system/catalogue.service
+        register: unit_file
     - name: copy mongo repo
       copy:
         src: mongo.repo
@@ -72,7 +73,6 @@
       systemd_service:
         name: catalogue
         daemon_reload: true
-      when: unit_file.changed
     - name: start and enable catalogue
       service:
         name: catalogue

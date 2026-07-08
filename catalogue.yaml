@@ -9,7 +9,6 @@
     - name: install nodejs 20
       package: 
          name: nodejs
-         version: 20
          state: present
     - name: create roboshop system user
       user:

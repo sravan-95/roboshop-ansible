@@ -35,7 +35,7 @@
       state: absent
   - name: copy nginx configuration
     template:
-       src: frontend.conf.j2
+       src: nginx.conf
        dest: /etc/nginx/nginx.conf
   - name: restart and enable frontend
     service:

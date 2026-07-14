@@ -47,7 +47,7 @@
   - name: copy payment service
     copy:
       src: payments.service.j2
-      dest: /etc/systemd/system/payment.service
+      dest: /etc/systemd/system/payments.service
   - name: daemon reload
     systemd_service: 
       name: payments
